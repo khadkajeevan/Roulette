@@ -150,6 +150,18 @@ namespace _8ARoulette
                         else
                         {
                             Console.WriteLine("The roulette rolled: " + ranColor + " " + roll);
+                            switch (roll % 3)
+                            {
+                                case (0):
+                                    Console.WriteLine($"Third column");
+                                    break;
+                                case (1):
+                                    Console.WriteLine($"First column");
+                                    break;
+                                case (2):
+                                    Console.WriteLine($"Second column");
+                                    break;
+                            }
                             Console.WriteLine("You lost! -$" + bet + "!");
                             Console.WriteLine("<Press enter to continue>");                            
                             Console.ReadKey();
